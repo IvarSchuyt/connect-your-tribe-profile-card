@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+}
+
+div {
+  display: flex;
+  width: 50%;
+  border-style: solid;
+  margin: 0 auto;
+}
+
+.main-links,
+.main-rechts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-about-me {
+  padding-top: 1rem;
+  width: 24 rem;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  padding-bottom: 1.8rem;
+}
+
+.img-playlist,
+.link-playlist {
+  height: 15rem;
+  width: 12rem;
+}
