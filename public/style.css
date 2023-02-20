@@ -3,11 +3,6 @@
 }
 
 body {
-  /* position: fixed; */
-  /* top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +54,7 @@ h2 {
 
 article section,
 form {
-  padding: 1rem;
+  /* padding: 1rem;
   width: 30rem;
   color: slate;
   text-align: center;
@@ -69,13 +64,29 @@ form {
   align-items: center;
 
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.06);
+  /* background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.8px);
   -webkit-backdrop-filter: blur(5.8px);
-  border: 1px solid rgba(255, 255, 255, 0.27);
+  border: 1px solid rgba(255, 255, 255, 0.27); */
 
   display: flex;
   z-index: 999;
+}
+
+.music-suggestions {
+  padding: 1rem;
+}
+
+section {
+  border: solid 1px black;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
 }

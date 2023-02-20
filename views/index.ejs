@@ -79,12 +79,14 @@
   </div>
 </div>
 
+<div class="music-suggestions"><h3>Music suggestions:</h3>
 <% member.shouts.forEach(shout => { %>
 <section>
-  <h2><%= shout.author %></h2>
+  <h4><%= shout.author %></h3>
   <p><%= shout.text %></p>
 </section>
 <% }) %>
+
 
 <form action="/" method="post">
   <input type="hidden" name="id" id="id" value="<%= member.id %>" />
@@ -93,9 +95,9 @@
   <input type="text" name="author" id="author" />
 
   <label for="text">Raad hier een nummer aan:</label>
-  <textarea name="text" id="text" cols="30" rows="10"></textarea>
+  <textarea name="text" id="text" cols="30" rows="1"></textarea>
 
   <input type="submit" value="Post!" />
 </form>
-
+</div>
 <%- include('./partials/foot') %> <%- include('./partials/foot') %>
