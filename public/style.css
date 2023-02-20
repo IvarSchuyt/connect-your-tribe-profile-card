@@ -3,11 +3,15 @@
 }
 
 body {
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .main-container {
@@ -16,6 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 div.main-container-inner {
@@ -50,4 +55,27 @@ h2 {
 .link-playlist {
   height: 15rem;
   width: 12rem;
+}
+
+article section,
+form {
+  padding: 1rem;
+  width: 30rem;
+  color: slate;
+  text-align: center;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+  border: 1px solid rgba(255, 255, 255, 0.27);
+
+  display: flex;
+  z-index: 999;
 }
