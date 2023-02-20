@@ -27,6 +27,7 @@ app.get("/", function (request, response) {
 
 app.post("/", function (request, response) {
   console.log(request.body);
+  request.body.text = "Aangeraden nummer: " + request.body.text;
   const headers = {
     headers: {
       Accept: "application/json",
