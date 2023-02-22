@@ -4,6 +4,7 @@
 
 * {
   margin: 0;
+  font-family:open sans;
 }
 
 body {
@@ -50,10 +51,16 @@ div.main-container-inner {
   width: 24 rem;
 }
 
+a {
+  color: black;
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
