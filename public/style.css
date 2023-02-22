@@ -4,7 +4,7 @@
 
 * {
   margin: 0;
-  font-family:open sans;
+  font-family: open sans;
 }
 
 body {
@@ -46,6 +46,10 @@ div.main-container-inner {
   flex-direction: column;
 }
 
+.main-links {
+  margin-right: 1rem;
+}
+
 .text-about-me {
   padding-top: 1rem;
   width: 24 rem;
@@ -58,7 +62,7 @@ a {
 ul {
   list-style: none;
   padding: 0;
-  margin-top: 1rem;
+  margin-top: 2.75rem;
   display: flex;
   flex-direction: column;
 }
@@ -82,6 +86,7 @@ section {
   border: solid 1px black;
   padding: 0.5rem;
   margin-top: 1rem;
+  border-radius: 1rem;
 }
 
 form {
@@ -89,3 +94,12 @@ form {
   flex-direction: column;
   margin-top: 1rem;
 }
+
+input,
+textarea {
+  background-color: transparent;
+  border: solid 1px black;
+  border-radius: 1rem;
+  height: 2rem;
+}
+
