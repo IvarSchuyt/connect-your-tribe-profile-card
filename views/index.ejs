@@ -81,6 +81,7 @@
   </div>
 </div>
 
+<!-- tekstballon met muzieksuggestie en auteur -->
 <div class="music-suggestions"><h3>Music suggestions:</h3>
 <% member.shouts.forEach(shout => { %>
 <section>
@@ -89,7 +90,7 @@
 </section>
 <% }) %>
 
-
+<!-- veld waar auteur naam en bericht in kan vullen -->
 <form action="/" method="post">
   <input type="hidden" name="id" id="id" value="<%= member.id %>" />
 
